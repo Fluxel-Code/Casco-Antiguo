@@ -1,0 +1,155 @@
+section#HOME_CURSOS {
+  max-width: calc(1259px + 80px);
+  padding: 35.5px 40px;
+  margin: 0 auto;
+
+  & > h2 {
+    text-align: center;
+    font: normal normal bold 36px/36px Lexend Deca;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+
+  & > .paragraph {
+    text-align: center;
+    font: normal normal 300 14px/20px Lexend Deca;
+    letter-spacing: 0px;
+    color: #000000;
+
+    //? max-width: 68.8%; este es el verdadero, pero no da como en el adobe
+    max-width: 87.5%;
+    margin: 0 auto 53px;
+  }
+
+  & > .box-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 21px;
+    //* mediaquery intermedia de 768px opcional para que no se vea, que pasa a un solo item de golpe
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+      aspect-ratio: 0.5186;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      max-height: 404px;
+      border-radius: 14px;
+      overflow: hidden;
+      mix-blend-mode: multiply;
+      opacity: 1;
+      cursor: pointer;
+
+      figure {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        mix-blend-mode: multiply;
+        opacity: 1;
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          mix-blend-mode: multiply;
+          opacity: 1;
+          // filter: saturate(
+          //   40%
+          // ); // *Se puso esto para darle el filtro azul que aparece en la imagen;
+          // mix-blend-mode: multiply;
+        }
+      }
+
+      .layer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        pointer-events: none;
+        padding: 33px 34px;
+        background: transparent
+          linear-gradient(180deg, #00000088 0%, #00000043 21%, #00000000 100%)
+          0% 0% no-repeat padding-box;
+
+        & > h3 {
+          text-align: left;
+          font: normal normal bold 28px/30px Lexend Deca;
+          letter-spacing: 0px;
+          color: #ffffff;
+          margin-bottom: 12px;
+          margin-top: 0;
+        }
+
+        & > .url-item {
+          text-align: left;
+          font: normal normal 800 14px/14px Lexend Deca;
+          letter-spacing: 0px;
+          color: #ffffff;
+
+          display: flex;
+          gap: 12px;
+          width: fit-content;
+          margin: 0;
+
+          span {
+            display: block;
+            // background-color: red;
+            svg {
+              width: 4px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .square-botton {
+    width: fit-content;
+  }
+}
+
+// *Esto es alternativo el mediaquery puede ser de 768 o 992
+@media screen and (min-width: 992px) {
+  section#HOME_CURSOS {
+    padding: 65px 40px;
+    & > h2 {
+      font: normal normal bold 52px/58px Lexend Deca;
+    }
+
+    & > .paragraph {
+      font: normal normal 300 16px/23px Lexend Deca;
+
+      max-width: 32%;
+      margin: 0 auto 73px;
+    }
+
+    & > .box-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+
+      & > .item {
+        aspect-ratio: 0.734;
+        max-height: 534px;
+
+        .layer {
+          .url-item {
+            span {
+              svg {
+                width: 5px;
+                height: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

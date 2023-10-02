@@ -1,0 +1,123 @@
+section#HOME_CURSOS {
+  max-width: calc(1259px + 80px);
+  padding: 35.5px 40px;
+  margin: 0 auto;
+}
+section#HOME_CURSOS h2 {
+  text-align: center;
+  font: normal normal bold 36px/36px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#HOME_CURSOS .paragraph {
+  text-align: center;
+  font: normal normal 300 14px/20px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+  max-width: 87.5%;
+  margin: 0 auto 53px;
+}
+section#HOME_CURSOS .box-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 21px;
+}
+@media screen and (min-width: 768px) {
+  section#HOME_CURSOS .box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section#HOME_CURSOS .box-grid .item {
+  aspect-ratio: 0.5186;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  max-height: 404px;
+  border-radius: 14px;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  cursor: pointer;
+}
+section#HOME_CURSOS .box-grid .item figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+section#HOME_CURSOS .box-grid .item figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+section#HOME_CURSOS .box-grid .item .layer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+  padding: 33px 34px;
+  background: transparent linear-gradient(180deg, #00000088 0%, #00000043 21%, #00000000 100%) 0% 0% no-repeat padding-box;
+}
+section#HOME_CURSOS .box-grid .item .layer > h3 {
+  text-align: left;
+  font: normal normal bold 28px/30px Lexend Deca;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+section#HOME_CURSOS .box-grid .item .layer > .url-item {
+  text-align: left;
+  font: normal normal 800 14px/14px Lexend Deca;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  margin: 0;
+}
+section#HOME_CURSOS .box-grid .item .layer > .url-item span {
+  display: block;
+}
+section#HOME_CURSOS .box-grid .item .layer > .url-item span svg {
+  width: 4px;
+  height: 8px;
+}
+section#HOME_CURSOS .square-botton {
+  width: fit-content;
+}
+@media screen and (min-width: 992px) {
+  section#HOME_CURSOS {
+    padding: 65px 40px;
+  }
+  section#HOME_CURSOS h2 {
+    font: normal normal bold 52px/58px Lexend Deca;
+  }
+  section#HOME_CURSOS .paragraph {
+    font: normal normal 300 16px/23px Lexend Deca;
+    max-width: 32%;
+    margin: 0 auto 73px;
+  }
+  section#HOME_CURSOS .box-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  section#HOME_CURSOS .box-grid > .item {
+    aspect-ratio: 0.734;
+    max-height: 534px;
+  }
+  section#HOME_CURSOS .box-grid > .item .layer .url-item span svg {
+    width: 5px;
+    height: 10px;
+  }
+}

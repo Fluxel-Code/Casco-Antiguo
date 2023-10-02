@@ -1,0 +1,105 @@
+section#HOME_BUCEO {
+  max-width: 1259px;
+  padding: 41.5px 0 48.5px 0;
+  margin: 0 auto;
+}
+section#HOME_BUCEO .square-buceo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section#HOME_BUCEO .square-buceo .video-divers {
+  aspect-ratio: 1.77;
+  max-height: 400px;
+}
+section#HOME_BUCEO .square-buceo .video-divers video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#HOME_BUCEO .square-buceo .box-info {
+  padding-top: 22px;
+  padding-right: 21px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  background-color: #063e5f;
+}
+section#HOME_BUCEO .square-buceo .box-info .content {
+  border: 1px solid #ffffff;
+  padding: 41px 33px;
+}
+section#HOME_BUCEO .square-buceo .box-info .content .title-divers {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-family: "Lexend Deca";
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
+  margin: 0;
+  max-width: 250px;
+}
+section#HOME_BUCEO .square-buceo .box-info .content .boton {
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 768px) {
+  section#HOME_BUCEO {
+    padding: 41.5px 0 48.5px 0;
+  }
+  section#HOME_BUCEO .square-buceo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  section#HOME_BUCEO .square-buceo .video-divers {
+    aspect-ratio: 1.211;
+    width: 55%;
+  }
+  section#HOME_BUCEO .square-buceo .box-info {
+    width: 45%;
+  }
+  section#HOME_BUCEO .square-buceo .box-info .content {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  section#HOME_BUCEO {
+    padding: 41.5px 0 48.5px 0;
+    position: relative;
+  }
+  section#HOME_BUCEO .square-buceo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#HOME_BUCEO .square-buceo .video-divers {
+    aspect-ratio: 1.77;
+    max-height: unset;
+    width: 75%;
+  }
+  section#HOME_BUCEO .square-buceo .box-info {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 31.37%;
+    width: 100%;
+  }
+  section#HOME_BUCEO .square-buceo .box-info .content {
+    padding: 22px 21px 18px 22px;
+  }
+}

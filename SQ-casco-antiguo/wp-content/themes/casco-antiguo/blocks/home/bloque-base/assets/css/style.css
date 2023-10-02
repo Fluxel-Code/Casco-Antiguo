@@ -1,0 +1,6 @@
+section#BlocHomeSectionHead {
+  background-color: blueviolet;
+}
+section#BlocHomeSectionHead .contenedor {
+  background: #ccc;
+}
