@@ -4,21 +4,15 @@ section#HOME_BUCEO {
   margin: 0 auto;
 }
 section#HOME_BUCEO .square-buceo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 section#HOME_BUCEO .square-buceo .video-divers {
   aspect-ratio: 1.77;
   max-height: 400px;
 }
 section#HOME_BUCEO .square-buceo .video-divers video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section#HOME_BUCEO .square-buceo .box-info {
   padding-top: 22px;
@@ -46,8 +40,6 @@ section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
 section#HOME_BUCEO .square-buceo .box-info .content .boton {
   margin-top: 40px;
   margin-bottom: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
@@ -55,10 +47,7 @@ section#HOME_BUCEO .square-buceo .box-info .content .boton {
     padding: 41.5px 0 48.5px 0;
   }
   section#HOME_BUCEO .square-buceo {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   section#HOME_BUCEO .square-buceo .video-divers {
     aspect-ratio: 1.211;
@@ -66,8 +55,6 @@ section#HOME_BUCEO .square-buceo .box-info .content .boton {
   }
   section#HOME_BUCEO .square-buceo .box-info {
     width: 45%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   section#HOME_BUCEO .square-buceo .box-info .content {
@@ -84,13 +71,8 @@ section#HOME_BUCEO .square-buceo .box-info .content .boton {
     position: relative;
   }
   section#HOME_BUCEO .square-buceo {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   section#HOME_BUCEO .square-buceo .video-divers {
     aspect-ratio: 1.77;
@@ -101,8 +83,7 @@ section#HOME_BUCEO .square-buceo .box-info .content .boton {
     position: absolute;
     left: 0;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     max-width: 31.37%;
     width: 100%;
   }
