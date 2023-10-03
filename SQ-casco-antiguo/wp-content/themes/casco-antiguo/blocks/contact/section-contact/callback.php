@@ -8,14 +8,17 @@ function FUN_BLOCK_CONTACT_Landing_contacto____content(){
             <form action="" class="w-100">
                 <div class="content-form">
                     <div class="info">
-                        <h1 class="title-contact">Contacta</h1>
+                        <h1 class="title-contact">
+                            <?php echo get_field("ACF_CONTACT_TITLE"); ?>
+                        </h1>
                         <div class="text-icon">
                             <span>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="22.365"
-                                        height="17.473"
-                                        viewBox="0 0 22.365 17.473"
+                            
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22.365"
+                                    height="17.473"
+                                    viewBox="0 0 22.365 17.473"
                                     >
                                         <g id="Grupo_1223" data-name="Grupo 1223" transform="translate(0.5 0.5)">
                                             <path
@@ -28,13 +31,13 @@ function FUN_BLOCK_CONTACT_Landing_contacto____content(){
                                                 stroke-width="1"
                                             />
                                         </g>
-                                    </svg>
-                                </span>
-                                escuela@cascoantiguo.com
-                            </div>
-                            <p class="paragraph">
-                                Puedes contactar con nuestro equipo a través de nuestro formulario o enviarnos un email con tu consulta.
-                            </p>
+                                </svg>
+                            </span>
+                            <?php echo get_field("ACF_CONTACT_TEXT_ICON_MESSENGER"); ?>
+                        </div>
+                        <p class="paragraph">
+                            <?php echo get_field("ACF_CONTACT_DESCRIP_BLOCK_CONTACT"); ?>
+                        </p>
                         </div>
                         <!-- .info -->
                     <div class="part-form"></div>
@@ -47,7 +50,7 @@ function FUN_BLOCK_CONTACT_Landing_contacto____content(){
                 <div class="info">
                     <div class="part-upper">
                         <h2 class="title-contact">
-                            Ven a conocernos
+                            <?php echo get_field("ACF_CONTACT_TITLE_MAP_BLOCK"); ?>
                         </h2>
                         <div class="location">
                             <i class="icon-location">
@@ -67,10 +70,11 @@ function FUN_BLOCK_CONTACT_Landing_contacto____content(){
                                     </svg>
                             </i>
                             <a href="#">
-                                Estamos en Madrid,
+                                <?php echo get_field("ACF_CONTACT_TEXT_LOCACTION_CONTACT"); ?>
+                                <!-- Estamos en Madrid,
                                 <br>
                                 en
-                                <strong>C. de Jorge Juan, 118</strong>
+                                <strong>C. de Jorge Juan, 118</strong> -->
                             </a>
                         </div>
                         <!-- .location -->
@@ -78,7 +82,7 @@ function FUN_BLOCK_CONTACT_Landing_contacto____content(){
                     <!-- .part-upper -->
                     <div class="part-bottom">
                         <a href="#" class="SQ_btn btn formatier-btn d-block">
-                            Encuéntranos en Google Maps
+                            <?php echo get_field("ACF_CONTACT_BTN_TEXT_LOCACTION_CONTACT"); ?>
                         </a>
                     </div>
                     <!-- .part-bottom -->

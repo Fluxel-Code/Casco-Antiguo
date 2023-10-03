@@ -6,7 +6,15 @@ function FUN_BLOCK_HOME_SectionLearning____content(){
     
         <div class="square">
             <figure class="m-0 photo-phone">
-                <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/09/Imagen-22.jpg" alt="" class="img-fluid photo-scale-positions">
+                <?php
+                    $image = get_field('ACF_HOME_BLOCK_LEARNING_IMG_PHONE');
+                    $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                    $sClase = "img-fluid photo-scale-positions";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                    if( $image ) {
+                        echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                    }
+                ?>
             </figure>
             <div class="content-info">
                 <figure class="m-0 bg-logo">
@@ -438,18 +446,22 @@ function FUN_BLOCK_HOME_SectionLearning____content(){
                 <!-- .logo -->
                 <div class="info">
                     <h3 class="title-card-learning">
-                        Cursos
+                        <?php echo get_field("ACF_HOME_BLOCK_LEARNING_TITLE_CARD"); ?>
+                        <!-- Cursos
                         <br>
-                        e-learning
+                        e-learning -->
                     </h3>
-                    <p class="paragraph">Contamos con más de 40 años de experiencia ofreciendo nuestro servicio de reparación y mantenimiento de equipos multimarca a miles de buceadores, empleando las herramientas y repuestos reglamentarios.</p>
+                    <p class="paragraph">
+                        <?php echo get_field("ACF_HOME_BLOCK_LEARNING_DESCRIP_CARD"); ?>
+                    </p>
                 </div>
                 <!-- .info -->
                 <div class="square-botton">
                     <a href="#" class="SQ_btn d-block">
-                        Accede a nuestra
+                        <?php echo get_field("ACF_HOME_BLOCK_LEARNING_BTN_CARD"); ?>
+                        <!-- Accede a nuestra
                         <br>
-                        formación eLearning
+                        formación eLearning -->
                     </a>
                 </div>
                 <!-- .square-botton movil -->
@@ -457,7 +469,7 @@ function FUN_BLOCK_HOME_SectionLearning____content(){
             <!-- .content-info -->
             <div class="square-botton-desktop d-none">
                 <a href="#" class="SQ_btn d-block">
-                    Accede a nuestra formación eLearning
+                    <?php echo get_field("ACF_HOME_BLOCK_LEARNING_BTN_CARD_DESKTOP"); ?>
                 </a>
             </div>
             <!-- .square-botton-desktop -->
