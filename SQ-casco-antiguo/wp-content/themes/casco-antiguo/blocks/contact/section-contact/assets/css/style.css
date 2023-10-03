@@ -1,0 +1,67 @@
+section#Contacto_LandingContacto {
+  padding-top: 165px;
+}
+section#Contacto_LandingContacto .content-form {
+  padding-top: 21.5px;
+  padding-bottom: 29px;
+  padding-left: 25px;
+  padding-right: 18.5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 14px 44px #00000069;
+  border-radius: 28px;
+  gap: 50px;
+}
+section#Contacto_LandingContacto .content-form .info {
+  margin-bottom: 50px;
+}
+section#Contacto_LandingContacto .content-form .info .title-contact {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  font: normal normal bold 40px/44px Lexend Deca;
+  letter-spacing: 0px;
+  color: #063e5f;
+}
+section#Contacto_LandingContacto .content-form .info .text-icon {
+  text-align: left;
+  font: normal normal bold 16px/23px Lexend Deca;
+  letter-spacing: 0px;
+  color: #063e5f;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+section#Contacto_LandingContacto .content-form .info .paragraph {
+  margin: 0;
+  text-align: left;
+  font: normal normal 300 16px/23px Lexend Deca;
+  letter-spacing: 0px;
+  color: #063e5f;
+}
+section#Contacto_LandingContacto .content-form .part-form {
+  height: 300px;
+}
+@media screen and (min-width: 992px) {
+  section#Contacto_LandingContacto .content-form {
+    padding-top: 43px;
+    padding-bottom: 47px;
+    padding-left: 58px;
+    padding-right: 37px;
+    display: grid;
+    grid-template-columns: 314px 1fr;
+    gap: 72px;
+  }
+  section#Contacto_LandingContacto .content-form .info {
+    margin-bottom: 0;
+  }
+  section#Contacto_LandingContacto .content-form .info .title-contact {
+    font: normal normal bold 56px/70px Lexend Deca;
+  }
+  section#Contacto_LandingContacto .content-form .info .text-icon {
+    margin-bottom: 25px;
+  }
+  section#Contacto_LandingContacto .content-form .part-form {
+    width: 100%;
+  }
+}
