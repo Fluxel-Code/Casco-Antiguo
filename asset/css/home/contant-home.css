@@ -1,0 +1,203 @@
+section#BlocHomeSectionContacth {
+  position: relative;
+  margin-top: 390px;
+}
+section#BlocHomeSectionContacth .bg-fondo {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+section#BlocHomeSectionContacth .bg-fondo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#BlocHomeSectionContacth .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 29px;
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 0 20px 41px;
+}
+section#BlocHomeSectionContacth .box form,
+section#BlocHomeSectionContacth .box .mt-neg-195 {
+  margin-top: -195px;
+}
+section#BlocHomeSectionContacth .box form .formu,
+section#BlocHomeSectionContacth .box .mt-neg-195 .formu {
+  background-color: white;
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 14px 44px #00000069;
+          box-shadow: 0px 14px 44px #00000069;
+  border-radius: 28px;
+  padding-left: 34px;
+  padding-right: 41px;
+  padding-top: 46px;
+  padding-bottom: 31px;
+}
+section#BlocHomeSectionContacth .box form .formu .title,
+section#BlocHomeSectionContacth .box .mt-neg-195 .formu .title {
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: left;
+  font: normal normal bold 27px/44px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#BlocHomeSectionContacth .box form .formu .paragraph,
+section#BlocHomeSectionContacth .box .mt-neg-195 .formu .paragraph {
+  margin-bottom: 13px;
+  margin-top: 0;
+  text-align: left;
+  font: normal normal 300 14px/20px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#BlocHomeSectionContacth .box form .formu .email,
+section#BlocHomeSectionContacth .box .mt-neg-195 .formu .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  text-align: left;
+  font: normal normal 300 12px/17px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#BlocHomeSectionContacth .box form .formu .inputs,
+section#BlocHomeSectionContacth .box .mt-neg-195 .formu .inputs {
+  aspect-ratio: 1.047;
+  margin-top: 36px;
+  height: 251px;
+}
+section#BlocHomeSectionContacth .box .map {
+  -webkit-box-shadow: 0px 14px 44px #00000069;
+          box-shadow: 0px 14px 44px #00000069;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+section#BlocHomeSectionContacth .box .map .info {
+  padding: 46px 40px 38px 50px;
+}
+section#BlocHomeSectionContacth .box .map .info .title {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  font: normal normal bold 27px/44px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#BlocHomeSectionContacth .box .map .info .location-movil {
+  display: block;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  font: normal normal 300 12px/17px Lexend Deca;
+}
+section#BlocHomeSectionContacth .box .map .info .location-desktop {
+  display: none;
+  color: #000000;
+  font: normal normal 500 16px/23px Lexend Deca;
+}
+section#BlocHomeSectionContacth .box .map .info .btn-locations {
+  margin-top: 24px;
+  text-align: center;
+  font: normal normal 800 12px/12px Lexend Deca;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section#BlocHomeSectionContacth .box .map .map-location {
+  height: 301px;
+}
+@media screen and (min-width: 900px) {
+  section#BlocHomeSectionContacth {
+    position: relative;
+    margin-top: 0;
+  }
+  section#BlocHomeSectionContacth .box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+    padding-bottom: 213px;
+    padding-top: 124px;
+  }
+  section#BlocHomeSectionContacth .box form,
+  section#BlocHomeSectionContacth .box .mt-neg-195 {
+    margin-top: 0;
+  }
+  section#BlocHomeSectionContacth .box form .formu,
+  section#BlocHomeSectionContacth .box .mt-neg-195 .formu {
+    padding-left: 61px;
+    padding-right: 59px;
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+  section#BlocHomeSectionContacth .box form .formu .title,
+  section#BlocHomeSectionContacth .box .mt-neg-195 .formu .title {
+    margin-bottom: 19px;
+    font: normal normal bold 36px/58px Lexend Deca;
+  }
+  section#BlocHomeSectionContacth .box form .formu .paragraph,
+  section#BlocHomeSectionContacth .box .mt-neg-195 .formu .paragraph {
+    font: normal normal 300 16px/23px Lexend Deca;
+  }
+  section#BlocHomeSectionContacth .box form .formu .email,
+  section#BlocHomeSectionContacth .box .mt-neg-195 .formu .email {
+    font: normal normal 300 16px/23px Lexend Deca;
+  }
+  section#BlocHomeSectionContacth .box form .formu .inputs,
+  section#BlocHomeSectionContacth .box .mt-neg-195 .formu .inputs {
+    aspect-ratio: 1.047;
+    margin-top: 36px;
+    height: auto;
+  }
+  section#BlocHomeSectionContacth .box .map {
+    aspect-ratio: 0;
+    border-radius: 28px;
+  }
+  section#BlocHomeSectionContacth .box .map .info {
+    padding: 53px 65px 54px;
+  }
+  section#BlocHomeSectionContacth .box .map .info .title {
+    font: normal normal bold 36px/58px Lexend Deca;
+    margin-bottom: 8px;
+  }
+  section#BlocHomeSectionContacth .box .map .info .location-movil {
+    display: none;
+  }
+  section#BlocHomeSectionContacth .box .map .info .location-desktop {
+    display: block;
+  }
+  section#BlocHomeSectionContacth .box .map .info .btn-locations {
+    margin-top: 24px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font: normal normal 800 16px/16px Lexend Deca;
+  }
+  section#BlocHomeSectionContacth .box .map .map-location {
+    height: 65%;
+  }
+}
