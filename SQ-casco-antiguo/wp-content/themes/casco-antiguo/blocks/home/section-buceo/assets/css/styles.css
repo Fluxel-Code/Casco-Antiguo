@@ -1,93 +1,123 @@
-section#HOME_BUCEO {
+section#BlocHomeSectionBuceo {
+  padding-top: 40px;
+}
+section#BlocHomeSectionBuceo .contenedor {
+  padding: 0px;
+}
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO {
   max-width: 1259px;
   padding: 41.5px 0 48.5px 0;
   margin: 0 auto;
 }
-section#HOME_BUCEO .square-buceo {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo {
   display: flex;
   flex-direction: column;
 }
-section#HOME_BUCEO .square-buceo .video-divers {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .video-divers {
   aspect-ratio: 1.77;
   max-height: 400px;
 }
-section#HOME_BUCEO .square-buceo .video-divers video {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .video-divers video {
   object-fit: cover;
 }
-section#HOME_BUCEO .square-buceo .box-info {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info {
   padding-top: 22px;
   padding-right: 21px;
   padding-bottom: 18px;
   padding-left: 22px;
   background-color: #063e5f;
 }
-section#HOME_BUCEO .square-buceo .box-info .content {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content {
   border: 1px solid #ffffff;
   padding: 41px 33px;
 }
-section#HOME_BUCEO .square-buceo .box-info .content .title-divers {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: left;
-  font-family: "Lexend Deca";
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .title-divers {
+  font: normal normal bold 40px/40px Lexend Deca;
+  color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 20px;
 }
-section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
   margin: 0;
-  padding-right: 67px;
+  max-width: 230px;
+  font: normal normal 300 16px/23px Lexend Deca;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
-section#HOME_BUCEO .square-buceo .box-info .content .boton {
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .boton {
   margin-top: 40px;
   margin-bottom: 0;
   width: fit-content;
 }
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .boton a.d-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .boton a.d-block::before {
+  height: 11.5px;
+}
 @media screen and (min-width: 768px) {
-  section#HOME_BUCEO {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO {
     padding: 41.5px 0 48.5px 0;
   }
-  section#HOME_BUCEO .square-buceo {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo {
     flex-direction: row-reverse;
   }
-  section#HOME_BUCEO .square-buceo .video-divers {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .video-divers {
     aspect-ratio: 1.211;
     width: 55%;
   }
-  section#HOME_BUCEO .square-buceo .box-info {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info {
     width: 45%;
     height: fit-content;
   }
-  section#HOME_BUCEO .square-buceo .box-info .content {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content {
     height: 100%;
     padding: 25px;
   }
-  section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO .square-buceo .box-info .content .paragraph {
     padding-right: 30px;
   }
 }
 @media screen and (min-width: 1020px) {
-  section#HOME_BUCEO {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO {
     padding: 41.5px 0 48.5px 0;
     position: relative;
   }
-  section#HOME_BUCEO .square-buceo {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo {
     flex-direction: row-reverse;
     align-items: center;
   }
-  section#HOME_BUCEO .square-buceo .video-divers {
-    aspect-ratio: 1.77;
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo .video-divers {
+    aspect-ratio: 1 / 0.61;
     max-height: unset;
     width: 75%;
   }
-  section#HOME_BUCEO .square-buceo .box-info {
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo div.box-info {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     max-width: 31.37%;
     width: 100%;
+    min-height: 440px;
+    max-height: 440px;
+    height: 100%;
   }
-  section#HOME_BUCEO .square-buceo .box-info .content {
-    padding: 22px 21px 18px 22px;
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo div.box-info div.content {
+    padding: 0px 21px 0px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo div.box-info div.content p.paragraph {
+    max-width: 275px;
+  }
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo div.box-info div.content div.boton a.d-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  section#BlocHomeSectionBuceo .contenedor section#HOME_BUCEO div.square-buceo div.box-info div.content div.boton a.d-block::before {
+    height: 11.5px;
   }
 }

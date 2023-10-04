@@ -12,13 +12,18 @@ function FUN_BLOCK_HOME_SectionBuceo____content(){
                 <div class="box-info">
                     <div class="content">
                         <h2 class="title-divers text-white">
-                            Tu curso
+                            <?php echo get_field("ACF_HOME_BLOCK_DIVER_TITLE"); ?>
+                            <!-- Tu curso
                             <br>
-                            de buceo
+                            de buceo -->
                         </h2>
-                        <p class="paragraph text-white">En Casco Antiguo trabajamos día a día para atender a nuestros clientes con la máxima profesionalidad, ofreciendo calidad, precio y un servicio inmejorables.</p>
+                        <p class="paragraph text-white">
+                            <?php echo get_field("ACF_HOME_BLOCK_DIVER_DESCRIP"); ?>
+                        </p>
                         <div class="boton">
-                            <a href="#" class="SQ_btn d-block">Acceder</a>
+                            <a href="#" class="SQ_btn d-block">
+                                <?php echo get_field("ACF_HOME_BLOCK_DIVER_BTN"); ?>
+                            </a>
                         </div>
                     </div>
                     <!-- content -->

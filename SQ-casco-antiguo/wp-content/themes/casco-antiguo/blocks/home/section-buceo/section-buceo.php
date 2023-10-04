@@ -12,12 +12,12 @@ $sCategory = "casco-antiguo-home";
 
 // Ej: array('home','SQ','Cabecera','Squembri');
 $aKW = array('home','SQ','Cursos', 'Buceo', 'Squembri');
-// Ej: array("post", "page")
+// Ej: array("post", "page") 
 $aPostType = array("post", "page");
 
 $sCallBack = "FUN_BLOCK_HOME_Buceo";
 
-$sRutaStyle = get_template_directory_uri()."/blocks/home/section-buceo/assets/css/style.css";
+$sRutaStyle = get_template_directory_uri()."/blocks/home/section-buceo/assets/css/styles.css";
 
 sq_blocks::Blocks_enqueue($sBlocName,$sLanding,$sDescription,$aKW,$aPostType,$sRutaStyle,$sCategory,$sCallBack);
 

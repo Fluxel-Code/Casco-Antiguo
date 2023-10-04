@@ -1,47 +1,65 @@
-section#HOME_BUCEO {
-  max-width: 1259px;
-  padding: 41.5px 0 48.5px 0;
-  margin: 0 auto;
-  .square-buceo {
-    display: flex;
-    flex-direction: column;
-
-    .video-divers {
-      aspect-ratio: 1.77;
-      max-height: 400px;
-      video {
-        object-fit: cover;
-      }
-    }
-
-    .box-info {
-      padding-top: 22px;
-      padding-right: 21px;
-      padding-bottom: 18px;
-      padding-left: 22px;
-      background-color: #063e5f;
-
-      .content {
-        border: 1px solid #ffffff;
-        padding: 41px 33px;
-        .title-divers {
-          font-size: 40px;
-          line-height: 40px;
-          text-align: left;
-          font-family: "Lexend Deca";
-          margin-top: 0;
-          margin-bottom: 20px;
+section#BlocHomeSectionBuceo {
+  padding-top: 40px;
+  
+  .contenedor  {
+    padding: 0px;
+  
+    section#HOME_BUCEO {
+      max-width: 1259px;
+      padding: 41.5px 0 48.5px 0;
+      margin: 0 auto;
+      .square-buceo {
+        display: flex;
+        flex-direction: column;
+    
+        .video-divers {
+          aspect-ratio: 1.77;
+          max-height: 400px;
+          video {
+            object-fit: cover;
+          }
         }
-
-        .paragraph {
-          margin: 0;
-          padding-right: 67px;
-        }
-
-        .boton {
-          margin-top: 40px;
-          margin-bottom: 0;
-          width: fit-content;
+    
+        .box-info {
+          padding-top: 22px;
+          padding-right: 21px;
+          padding-bottom: 18px;
+          padding-left: 22px;
+          background-color: #063e5f;
+    
+          .content {
+            border: 1px solid #ffffff;
+            padding: 41px 33px;
+            .title-divers {
+              font: normal normal bold 40px/40px Lexend Deca;
+              color: #FFFFFF;
+              margin-top: 0;
+              margin-bottom: 20px;
+            }
+    
+            .paragraph {
+              margin: 0;
+              max-width: 230px;
+              font: normal normal 300 16px/23px Lexend Deca;
+              letter-spacing: 0px;
+              color: #FFFFFF;
+            }
+    
+            .boton {
+              margin-top: 40px;
+              margin-bottom: 0;
+              width: fit-content;
+  
+              a.d-block {
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+  
+              a.d-block::before {
+                height: 11.5px;
+              }
+            }
+          }
         }
       }
     }
@@ -49,23 +67,28 @@ section#HOME_BUCEO {
 }
 
 @media screen and (min-width: 768px) {
-  section#HOME_BUCEO {
-    padding: 41.5px 0 48.5px 0;
-    .square-buceo {
-      flex-direction: row-reverse;
-      .video-divers {
-        aspect-ratio: 1.211;
-        width: 55%;
-      }
 
-      .box-info {
-        width: 45%;
-        height: fit-content;
-        .content {
-          height: 100%;
-          padding: 25px;
-          .paragraph {
-            padding-right: 30px;
+  section#BlocHomeSectionBuceo {
+    .contenedor  {
+      section#HOME_BUCEO {
+        padding: 41.5px 0 48.5px 0;
+        .square-buceo {
+          flex-direction: row-reverse;
+          .video-divers {
+            aspect-ratio: 1.211;
+            width: 55%;
+          }
+    
+          .box-info {
+            width: 45%;
+            height: fit-content;
+            .content {
+              height: 100%;
+              padding: 25px;
+              .paragraph {
+                padding-right: 30px;
+              }
+            }
           }
         }
       }
@@ -75,28 +98,53 @@ section#HOME_BUCEO {
 
 // responsive mucho de los 1600
 @media screen and (min-width: 1020px) {
-  section#HOME_BUCEO {
-    padding: 41.5px 0 48.5px 0;
-    position: relative;
-    .square-buceo {
-      flex-direction: row-reverse;
-      align-items: center;
-
-      .video-divers {
-        aspect-ratio: 1.77;
-        max-height: unset;
-        width: 75%;
-      }
-
-      .box-info {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 31.37%;
-        width: 100%;
-        .content {
-          padding: 22px 21px 18px 22px;
+  section#BlocHomeSectionBuceo {
+    .contenedor  {
+      section#HOME_BUCEO {
+        padding: 41.5px 0 48.5px 0;
+        position: relative;
+        div.square-buceo {
+          flex-direction: row-reverse;
+          align-items: center;
+    
+          .video-divers {
+            aspect-ratio: 1 / 0.61;
+            max-height: unset;
+            width: 75%;
+          }
+    
+          div.box-info {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 31.37%;
+            width: 100%;
+            min-height: 440px;
+            max-height: 440px;
+            height: 100%;
+            div.content {
+              padding: 0px 21px 0px 22px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+    
+              p.paragraph {
+                max-width: 275px;
+              }
+    
+              div.boton {
+                a.d-block {
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+    
+                a.d-block::before {
+                  height: 11.5px;
+                }
+              }
+            }
+          }
         }
       }
     }

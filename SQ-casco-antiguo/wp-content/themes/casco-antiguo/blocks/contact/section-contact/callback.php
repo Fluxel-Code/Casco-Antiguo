@@ -4,7 +4,7 @@
 function FUN_BLOCK_CONTACT_Landing_contacto____content(){
     echo "****";
     ?>
-        <section id="CONTACT_FORM" class="wrap-small">
+        <section id="#Contacto_LandingContacto" class="wrap-small">
             <form action="" class="w-100">
                 <div class="content-form">
                     <div class="info">
