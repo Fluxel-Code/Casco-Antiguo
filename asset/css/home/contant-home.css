@@ -34,6 +34,7 @@ section#BlocHomeSectionContacth .box {
 section#BlocHomeSectionContacth .box form,
 section#BlocHomeSectionContacth .box .mt-neg-195 {
   margin-top: -195px;
+  width: 100%;
 }
 section#BlocHomeSectionContacth .box form .formu,
 section#BlocHomeSectionContacth .box .mt-neg-195 .formu {
@@ -146,6 +147,7 @@ section#BlocHomeSectionContacth .box .map .map-location {
   section#BlocHomeSectionContacth .box form,
   section#BlocHomeSectionContacth .box .mt-neg-195 {
     margin-top: 0;
+    width: 40%;
   }
   section#BlocHomeSectionContacth .box form .formu,
   section#BlocHomeSectionContacth .box .mt-neg-195 .formu {
@@ -174,6 +176,7 @@ section#BlocHomeSectionContacth .box .map .map-location {
     height: auto;
   }
   section#BlocHomeSectionContacth .box .map {
+    width: 60%;
     aspect-ratio: 0;
     border-radius: 28px;
   }

@@ -5,14 +5,25 @@ function FUN_BLOCK_HOME_SectionContact____content(){
     //Recuerdar poner esta funcion en "___base"
     ?>
         <figure class="bg-fondo">
-            <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/09/Imagen-21-scaled.jpg" alt="" class="img-fluid ">
+            <?php
+                $image = get_field('ACF_HOME_BLOCK_CONTACT_BG_IMG');
+                $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                $sClase = "img-fluid";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                if( $image ) {
+                    echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                }
+            ?>
+            <!-- <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/09/Imagen-21-scaled.jpg" alt="" class="img-fluid "> -->
         </figure>
         <div class="box">
-            <form action="" class="w-100 mt-neg-195">
+            <form action="" class="mt-neg-195">
                 <div class="formu">
-                    <h3 class="title">Contacta</h3>
+                    <h3 class="title">
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_TITLE_CONTACT"); ?>
+                    </h3>
                     <p class="paragraph">
-                        Puedes contactar con nuestro equipo a través de nuestro formulario o enviarnos un email con tu consulta.
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_PARAGRAPH_CONTACT"); ?>
                     </p>
                     <a href="#" class="email">
                         <span>
@@ -31,7 +42,7 @@ function FUN_BLOCK_HOME_SectionContact____content(){
                                     />
                             </svg>
                         </span>
-                            escuela@cascoantiguo.com
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_LINK_CONTACT"); ?>
                     </a>
                 
                     <div class="inputs"></div>
@@ -42,7 +53,10 @@ function FUN_BLOCK_HOME_SectionContact____content(){
             <!-- map -->
             <div class="map">
                 <div class="info">
-                    <h3 class="title">Ven a conocernos</h3>
+                    <h3 class="title">
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_TITLE_LOCATION"); ?>
+                        
+                    </h3>
                     <a href="#" class="location-movil">
                         <span>
                             <svg
@@ -60,9 +74,10 @@ function FUN_BLOCK_HOME_SectionContact____content(){
                                 />
                             </svg>
                         </span>
-                        Estamos en Madrid,
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_TEXT_MOVIL_LOCATION"); ?>
+                        <!-- Estamos en Madrid,
                         <br>
-                        en <strong>C. de Jorge Juan, 118</strong>
+                        en <strong>C. de Jorge Juan, 118</strong> -->
                     </a>
                     <a href="#" class="location-desktop">
                         <span>
@@ -81,10 +96,13 @@ function FUN_BLOCK_HOME_SectionContact____content(){
                                 />
                             </svg>
                         </span>
-                        Estamos en Madrid, en
-                        <strong>C. de Jorge Juan, 118</strong>
+                        <?php echo get_field("ACF_HOME_BLOCK_CONTACT_TEXT_DESKTOP_LOCATION"); ?>
+                        <!-- Estamos en Madrid, en
+                        <strong>C. de Jorge Juan, 118</strong> -->
                     </a>
-                    <a href="#" class="SQ_btn d-block btn-locations">Encuéntranos en Google Maps</a>
+                    <a href="#" class="SQ_btn d-block btn-locations">
+                    <?php echo get_field("ACF_HOME_BLOCK_CONTACT_BTN_LOCATION"); ?>
+                    </a>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12149.493185386187!2d-3.676859922158063!3d40.42273226541802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422890ac9ebf1b%3A0x8acd6a77b2993452!2sCasco%20Antiguo%20Buceo!5e0!3m2!1ses-419!2sve!4v1696354541122!5m2!1ses-419!2sve"
