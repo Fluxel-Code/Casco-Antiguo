@@ -1,0 +1,96 @@
+section#HOME_ACCES_CUESTIONARIO {
+  padding-top: 51px;
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 72px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+      .icon {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .title-items {
+        display: block;
+        font: normal normal bold 28px/32px Lexend Deca;
+        letter-spacing: 0px;
+        color: #000000;
+        margin-bottom: 23px;
+      }
+
+      .paragraph {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font: normal normal 300 16px/23px Lexend Deca;
+        letter-spacing: 0px;
+        color: #000000;
+      }
+
+      .link-items {
+        font: normal normal 800 20px/20px Lexend Deca;
+        letter-spacing: 0px;
+        color: #005678;
+        display: block;
+        text-align: center;
+
+        & > span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section#HOME_ACCES_CUESTIONARIO {
+    padding-top: 73px;
+    padding-bottom: 88px;
+    background-color: #f5f5f5;
+    .wrap {
+      grid-template-columns: repeat(3, 300px);
+      justify-content: space-around;
+      gap: 70px;
+
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .item {
+        .icon {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .title-items {
+          display: block;
+          font: normal normal bold 28px/32px Lexend Deca;
+          letter-spacing: 0px;
+          color: #000000;
+          margin-bottom: 23px;
+        }
+
+        .paragraph {
+          margin-top: 0;
+          margin-bottom: 20px;
+          font: normal normal 300 16px/23px Lexend Deca;
+          letter-spacing: 0px;
+          color: #000000;
+        }
+
+        .link-items {
+          font: normal normal 800 20px/20px Lexend Deca;
+          letter-spacing: 0px;
+          color: #005678;
+          display: block;
+          text-align: center;
+
+          & > span {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
