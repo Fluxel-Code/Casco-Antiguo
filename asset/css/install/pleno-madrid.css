@@ -1,0 +1,23 @@
+section#INSTALL_PLENO_MADRID {
+  padding-top: 63px;
+  background-color: aquamarine;
+  height: 100vh;
+}
+section#INSTALL_PLENO_MADRID .wrap-small .flex-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-info .title {
+  font: normal normal medium 36px/40px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
+section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-info .paragraph {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-align: left;
+  font: normal normal 300 16px/23px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+}
