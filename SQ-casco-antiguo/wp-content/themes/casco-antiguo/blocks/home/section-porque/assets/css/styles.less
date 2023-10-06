@@ -48,11 +48,12 @@ section#BlocHomeSectionPorque {
       & > img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain; // se agrego esto
       }
     }
 
     .left-img {
+      max-height: 300px; // se agrego esto
       aspect-ratio: 1.395;
       position: relative;
       z-index: 2;
@@ -60,6 +61,7 @@ section#BlocHomeSectionPorque {
     }
 
     .right-img {
+      max-height: 350px; // se agrego esto
       margin-left: auto;
       margin-right: -40px;
       margin-top: -39px;
@@ -85,8 +87,10 @@ section#BlocHomeSectionPorque {
     }
   }
 }
+
 @media screen and (min-width: 992px) {
   section#BlocHomeSectionPorque {
+    margin-bottom: -210px;
     padding-top: 106.5px;
     padding-bottom: 72px;
     display: grid;

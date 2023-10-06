@@ -1,0 +1,122 @@
+section#BlocHomeSectionServicios {
+  padding-top: 61.5px;
+  padding-bottom: 72px;
+  .wrap {
+    .box {
+      display: grid;
+      grid-template-columns: 343px;
+      justify-content: center;
+
+      gap: 58px;
+
+      .card {
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0px 3px 25px #00000029;
+        .card-header {
+          padding: 0;
+          border: none;
+          .img-card {
+            aspect-ratio: 1.715;
+            & > img {
+              width: 100%;
+              object-fit: cover;
+              height: 100%;
+            }
+          }
+        }
+
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          padding: 33px 55px 38px 38px;
+          .title-card {
+            text-align: left;
+            font-size: 26px;
+            line-height: 28px;
+            font-family: "Lexend Deca";
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0px;
+          }
+
+          .btn {
+            width: fit-content;
+            text-align: left;
+            white-space: nowrap;
+          }
+        }
+
+        // colores de la cartas
+        .light-blue {
+          background-color: #72b0cb;
+          .title-card {
+            color: #063e5f;
+          }
+        }
+
+        .dark-blue {
+          background-color: #063e5f;
+          .title-card {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section#BlocHomeSectionServicios {
+    padding-top: 0;
+    margin-top: -40px;
+    padding-bottom: 83.5px;
+    .wrap {
+      .box {
+        grid-template-columns: repeat(2, 1fr);
+
+        .card {
+          overflow: visible;
+          .card-header {
+            overflow: hidden;
+            .img-card {
+              border-top-right-radius: 14px;
+              border-top-left-radius: 14px;
+              overflow: hidden;
+              aspect-ratio: 1.715;
+            }
+          }
+
+          .card-body {
+            flex-direction: row;
+            align-items: end;
+            gap: 0;
+            border-bottom-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            padding: 35px 20px 30px 55px;
+            position: relative;
+
+            .text-logo {
+              overflow: hidden;
+              position: absolute;
+              right: 20px;
+              display: block !important;
+              width: 380px;
+            }
+            .title-card {
+              font-size: 34px;
+              line-height: 36px;
+            }
+
+            .btn {
+              height: fit-content;
+              position: absolute;
+              right: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

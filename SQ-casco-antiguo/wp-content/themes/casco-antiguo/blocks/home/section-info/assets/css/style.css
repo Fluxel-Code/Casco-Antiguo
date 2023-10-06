@@ -1,71 +1,61 @@
-section#HOME_ACCES_CUESTIONARIO {
+section#BlocHomeSectionInfo {
   padding-top: 51px;
   padding-bottom: 61.5px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap {
-  display: -ms-grid;
+section#BlocHomeSectionInfo .wrap {
   display: grid;
-  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   gap: 72px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
 @media screen and (min-width: 768px) {
-  section#HOME_ACCES_CUESTIONARIO .wrap {
-    -ms-grid-columns: (1fr)[2];
+  section#BlocHomeSectionInfo .wrap {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .item .icon {
+section#BlocHomeSectionInfo .wrap .item .icon {
   text-align: center;
   margin-bottom: 20px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .item .title-items {
+section#BlocHomeSectionInfo .wrap .item .title-items {
   display: block;
   font: normal normal bold 28px/32px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
   margin-bottom: 23px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .item .paragraph {
+section#BlocHomeSectionInfo .wrap .item .paragraph {
   margin-top: 0;
   margin-bottom: 20px;
   font: normal normal 300 16px/23px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .item .link-items {
+section#BlocHomeSectionInfo .wrap .item .link-items {
   font: normal normal 800 20px/20px Lexend Deca;
   letter-spacing: 0px;
   color: #005678;
   display: block;
   text-align: center;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .item .link-items > span {
+section#BlocHomeSectionInfo .wrap .item .link-items > span {
   margin-left: 15px;
 }
 @media screen and (min-width: 1000px) {
-  section#HOME_ACCES_CUESTIONARIO {
+  section#BlocHomeSectionInfo {
     padding-top: 240px;
     padding-bottom: 170px;
     background-color: #f5f5f5;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap {
-    -ms-grid-columns: 300px 50px 300px 50px 300px;
+  section#BlocHomeSectionInfo .wrap {
     grid-template-columns: repeat(3, 300px);
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     gap: 50px;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap .item .icon {
+  section#BlocHomeSectionInfo .wrap .item .icon {
     margin-bottom: 25px;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap .item .title-items {
+  section#BlocHomeSectionInfo .wrap .item .title-items {
     margin-bottom: 24px;
   }
 }

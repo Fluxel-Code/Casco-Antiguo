@@ -80,6 +80,7 @@ section#HOME_BECAUSE .title-grey > h3 {
 }
 @media screen and (min-width: 992px) {
   section#HOME_BECAUSE {
+    margin-bottom: -210px;
     padding-top: 106.5px;
     padding-bottom: 72px;
     display: -ms-grid;

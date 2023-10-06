@@ -1,0 +1,106 @@
+section#BlocHomeSectionServicios {
+  padding-top: 61.5px;
+  padding-bottom: 72px;
+}
+section#BlocHomeSectionServicios .wrap .box {
+  display: grid;
+  grid-template-columns: 343px;
+  justify-content: center;
+  gap: 58px;
+}
+section#BlocHomeSectionServicios .wrap .box .card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0px 3px 25px #00000029;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-header {
+  padding: 0;
+  border: none;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-header .img-card {
+  aspect-ratio: 1.715;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-header .img-card > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 33px 55px 38px 38px;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-body .title-card {
+  text-align: left;
+  font-size: 26px;
+  line-height: 28px;
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+section#BlocHomeSectionServicios .wrap .box .card .card-body .btn {
+  width: fit-content;
+  text-align: left;
+  white-space: nowrap;
+}
+section#BlocHomeSectionServicios .wrap .box .card .light-blue {
+  background-color: #72b0cb;
+}
+section#BlocHomeSectionServicios .wrap .box .card .light-blue .title-card {
+  color: #063e5f;
+}
+section#BlocHomeSectionServicios .wrap .box .card .dark-blue {
+  background-color: #063e5f;
+}
+section#BlocHomeSectionServicios .wrap .box .card .dark-blue .title-card {
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  section#BlocHomeSectionServicios {
+    padding-top: 0;
+    margin-top: -40px;
+    padding-bottom: 83.5px;
+  }
+  section#BlocHomeSectionServicios .wrap .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#BlocHomeSectionServicios .wrap .box .card {
+    overflow: visible;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-header {
+    overflow: hidden;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-header .img-card {
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 1.715;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-body {
+    flex-direction: row;
+    align-items: end;
+    gap: 0;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding: 35px 20px 30px 55px;
+    position: relative;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-body .text-logo {
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    display: block !important;
+    width: 380px;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-body .title-card {
+    font-size: 34px;
+    line-height: 36px;
+  }
+  section#BlocHomeSectionServicios .wrap .box .card .card-body .btn {
+    height: fit-content;
+    position: absolute;
+    right: -10px;
+  }
+}
