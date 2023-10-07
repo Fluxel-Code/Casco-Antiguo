@@ -2,43 +2,43 @@ section#BlocHomeSectionInfo {
   padding-top: 51px;
   padding-bottom: 61.5px;
 }
-section#BlocHomeSectionInfo .wrap {
+section#BlocHomeSectionInfo .wrap .box-flex {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 72px;
 }
 @media screen and (min-width: 768px) {
-  section#BlocHomeSectionInfo .wrap {
+  section#BlocHomeSectionInfo .wrap .box-flex {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-section#BlocHomeSectionInfo .wrap .item .icon {
+section#BlocHomeSectionInfo .wrap .box-flex .item .icon {
   text-align: center;
   margin-bottom: 20px;
 }
-section#BlocHomeSectionInfo .wrap .item .title-items {
+section#BlocHomeSectionInfo .wrap .box-flex .item .title-items {
   display: block;
   font: normal normal bold 28px/32px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
   margin-bottom: 23px;
 }
-section#BlocHomeSectionInfo .wrap .item .paragraph {
+section#BlocHomeSectionInfo .wrap .box-flex .item .paragraph {
   margin-top: 0;
   margin-bottom: 20px;
   font: normal normal 300 16px/23px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
 }
-section#BlocHomeSectionInfo .wrap .item .link-items {
+section#BlocHomeSectionInfo .wrap .box-flex .item .link-items {
   font: normal normal 800 20px/20px Lexend Deca;
   letter-spacing: 0px;
   color: #005678;
   display: block;
   text-align: center;
 }
-section#BlocHomeSectionInfo .wrap .item .link-items > span {
+section#BlocHomeSectionInfo .wrap .box-flex .item .link-items > span {
   margin-left: 15px;
 }
 @media screen and (min-width: 1000px) {
@@ -47,15 +47,15 @@ section#BlocHomeSectionInfo .wrap .item .link-items > span {
     padding-bottom: 170px;
     background-color: #f5f5f5;
   }
-  section#BlocHomeSectionInfo .wrap {
+  section#BlocHomeSectionInfo .wrap .box-flex {
     grid-template-columns: repeat(3, 300px);
     justify-content: space-around;
     gap: 50px;
   }
-  section#BlocHomeSectionInfo .wrap .item .icon {
+  section#BlocHomeSectionInfo .wrap .box-flex .item .icon {
     margin-bottom: 25px;
   }
-  section#BlocHomeSectionInfo .wrap .item .title-items {
+  section#BlocHomeSectionInfo .wrap .box-flex .item .title-items {
     margin-bottom: 24px;
   }
 }

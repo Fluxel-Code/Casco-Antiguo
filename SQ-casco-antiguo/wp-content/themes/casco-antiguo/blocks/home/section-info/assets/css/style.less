@@ -1,47 +1,49 @@
 section#BlocHomeSectionInfo {
-  // !Nota en desktop hay que ponerle  un padding mucho mas grande para que la seccion gris, abarque la demas secciones y ponerle a la otras secciones margin negativos
   padding-top: 51px;
   padding-bottom: 61.5px;
   .wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 72px;
+    .box-flex {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 72px;
 
-    // media query para que se vean los dos items
-    @media screen and (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .item {
-      .icon {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .title-items {
-        display: block;
-        font: normal normal bold 28px/32px Lexend Deca;
-        letter-spacing: 0px;
-        color: #000000;
-        margin-bottom: 23px;
+      // media query para que se vean los dos items
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .paragraph {
-        margin-top: 0;
-        margin-bottom: 20px;
-        font: normal normal 300 16px/23px Lexend Deca;
-        letter-spacing: 0px;
-        color: #000000;
-      }
+      .item {
+        .icon {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .title-items {
+          display: block;
+          font: normal normal bold 28px/32px Lexend Deca;
+          letter-spacing: 0px;
+          color: #000000;
+          margin-bottom: 23px;
+        }
 
-      .link-items {
-        font: normal normal 800 20px/20px Lexend Deca;
-        letter-spacing: 0px;
-        color: #005678;
-        display: block;
-        text-align: center;
+        .paragraph {
+          margin-top: 0;
+          margin-bottom: 20px;
+          font: normal normal 300 16px/23px Lexend Deca;
+          letter-spacing: 0px;
+          color: #000000;
+        }
 
-        & > span {
-          margin-left: 15px;
+        .link-items {
+          font: normal normal 800 20px/20px Lexend Deca;
+          letter-spacing: 0px;
+          color: #005678;
+          display: block;
+          text-align: center;
+
+          & > span {
+            margin-left: 15px;
+          }
         }
       }
     }
@@ -54,15 +56,18 @@ section#BlocHomeSectionInfo {
     padding-bottom: 170px;
     background-color: #f5f5f5;
     .wrap {
-      grid-template-columns: repeat(3, 300px);
-      justify-content: space-around;
-      gap: 50px;
-      .item {
-        .icon {
-          margin-bottom: 25px;
-        }
-        .title-items {
-          margin-bottom: 24px;
+      .box-flex {
+        grid-template-columns: repeat(3, 300px);
+        justify-content: space-around;
+        gap: 50px;
+
+        .item {
+          .icon {
+            margin-bottom: 25px;
+          }
+          .title-items {
+            margin-bottom: 24px;
+          }
         }
       }
     }
