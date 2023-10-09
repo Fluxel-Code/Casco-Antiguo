@@ -2,33 +2,33 @@
 require_once "callback.php";
 
 // Ej: Head
-$sBlocName = "Info";
+$sBlocName = "HEADER";
 // Ej: HOME
-$sLanding = "HOME";
+$sLanding = "INSTALACIONES";
 // Ej: Seccion cabecera de la home
-$sDescription = "HOME - Informacion";
+$sDescription = "INSTALACIONES - Cabecera de la landing";
 // Ej: casco-antiguo-home
-$sCategory = "casco-antiguo-home";
+$sCategory = "casco-antiguo-instalaciones";
 
 // Ej: array('home','SQ','Cabecera','Squembri');
-$aKW = array('home','SQ','Informacion','Squembri');
+$aKW = array('instalaciones','SQ','Cabecera','Squembri');
 // Ej: array("post", "page")
 $aPostType = array("post", "page");
 
-$sCallBack = "FUN_BLOCK_HOME_Info";
+$sCallBack = "FUN_BLOCK_INST_Head_instalaciones";
 
-$sRutaStyle = get_template_directory_uri()."/blocks/home/section-info/assets/css/style.css";
+$sRutaStyle = get_template_directory_uri()."/blocks/instalaciones/section-header/assets/css/style.css";
 
 sq_blocks::Blocks_enqueue($sBlocName,$sLanding,$sDescription,$aKW,$aPostType,$sRutaStyle,$sCategory,$sCallBack);
 
 
-function FUN_BLOCK_HOME_Info(){
+function FUN_BLOCK_INST_Head_instalaciones(){
     // Establecer el id de la seccion para el bloque, debe ser único
-    $sIdBlock = "BlocHomeSectionInfo";
-    FUN_BLOCK_HOME_SectionInfo____Base($sIdBlock);
+    $sIdBlock = "BlocInstaSectionHead_instalaciones";
+    FUN_BLOCK_INST_SectionHead_instalaciones____Base($sIdBlock);
 }
 
-function FUN_BLOCK_HOME_SectionInfo____Base($sIdBlock){
+function FUN_BLOCK_INST_SectionHead_instalaciones____Base($sIdBlock){
     // AJUSTES AUTOMÁTICOS!!!!!!!
     /**
      * 
@@ -53,7 +53,7 @@ function FUN_BLOCK_HOME_SectionInfo____Base($sIdBlock){
     ?>
     <section class="<?php echo $sClass; ?>" id="<?php echo $sIdBlock; ?>" >
         <div class="contenedor <?php echo $sContenedor; ?>" <?php echo $sCustomBox; ?>>
-            <?php FUN_BLOCK_HOME_SectionInfo____content(); ?>
+            <?php FUN_BLOCK_INST_SectionHead_instalaciones____content(); ?>
         </div>
     </section><!-- #<?php echo $sIdBlock; ?> -->
     <?php

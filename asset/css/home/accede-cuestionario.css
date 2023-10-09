@@ -1,71 +1,97 @@
-section#HOME_ACCES_CUESTIONARIO {
+section#BlocHomeSectionInfo {
   padding-top: 51px;
   padding-bottom: 61.5px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex {
+section#BlocHomeSectionInfo .wrap .box-flex {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
+  justify-items: center;
   gap: 72px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex > *:nth-child(1) {
+section#BlocHomeSectionInfo .wrap .box-flex > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 @media screen and (min-width: 768px) {
-  section#HOME_ACCES_CUESTIONARIO .wrap .box-flex {
+  section#BlocHomeSectionInfo .wrap .box-flex {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .icon {
+section#BlocHomeSectionInfo .wrap .box-flex .item .icon {
   text-align: center;
   margin-bottom: 20px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .title-items {
+section#BlocHomeSectionInfo .wrap .box-flex .item .title-items {
   display: block;
   font: normal normal bold 28px/32px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
   margin-bottom: 23px;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .paragraph {
+section#BlocHomeSectionInfo .wrap .box-flex .item .paragraph {
+  max-width: 260px;
   margin-top: 0;
   margin-bottom: 20px;
   font: normal normal 300 16px/23px Lexend Deca;
   letter-spacing: 0px;
   color: #000000;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .link-items {
+section#BlocHomeSectionInfo .wrap .box-flex .item .link-items {
   font: normal normal 800 20px/20px Lexend Deca;
   letter-spacing: 0px;
   color: #005678;
   display: block;
   text-align: center;
 }
-section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .link-items > span {
+section#BlocHomeSectionInfo .wrap .box-flex .item .link-items > span {
   margin-left: 15px;
 }
 @media screen and (min-width: 1000px) {
-  section#HOME_ACCES_CUESTIONARIO {
+  section#BlocHomeSectionInfo {
     padding-top: 240px;
     padding-bottom: 170px;
     background-color: #f5f5f5;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap .box-flex {
-    -ms-grid-columns: 300px 50px 300px 50px 300px;
-    grid-template-columns: repeat(3, 300px);
+  section#BlocHomeSectionInfo .wrap .box-flex {
+    -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
+    grid-template-columns: repeat(3, 1fr);
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 50px;
+    justify-items: center;
+    gap: 0px;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .icon {
+  section#BlocHomeSectionInfo .wrap .box-flex .item {
+    width: 100%;
+  }
+  section#BlocHomeSectionInfo .wrap .box-flex .item:nth-child(1),
+  section#BlocHomeSectionInfo .wrap .box-flex .item:nth-child(2) {
+    position: relative;
+  }
+  section#BlocHomeSectionInfo .wrap .box-flex .item:nth-child(1)::after,
+  section#BlocHomeSectionInfo .wrap .box-flex .item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-right: 2px solid #72b0cb;
+    height: 72px;
+    top: calc(40% - 36px);
+    opacity: 0.22;
+  }
+  section#BlocHomeSectionInfo .wrap .box-flex .item .icon {
     margin-bottom: 25px;
   }
-  section#HOME_ACCES_CUESTIONARIO .wrap .box-flex .item .title-items {
+  section#BlocHomeSectionInfo .wrap .box-flex .item .title-items {
+    margin-bottom: 24px;
+  }
+  section#BlocHomeSectionInfo .wrap .box-flex .item .paragraph {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
     margin-bottom: 24px;
   }
 }

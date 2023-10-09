@@ -45,6 +45,9 @@ section#BlocHomeSectionServicios .wrap .box .card .card-body .btn {
   text-align: left;
   white-space: nowrap;
 }
+section#BlocHomeSectionServicios .wrap .box .card .card-body .btn:hover {
+  color: white;
+}
 section#BlocHomeSectionServicios .wrap .box .card .light-blue {
   background-color: #72b0cb;
 }

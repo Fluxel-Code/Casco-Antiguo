@@ -1,4 +1,4 @@
-section#HOME_ACCES_CUESTIONARIO {
+section#BlocHomeSectionInfo {
   padding-top: 51px;
   padding-bottom: 61.5px;
   .wrap {
@@ -6,12 +6,14 @@ section#HOME_ACCES_CUESTIONARIO {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
+      justify-items: center;
       gap: 72px;
 
       // media query para que se vean los dos items
       @media screen and (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
       }
+
       .item {
         .icon {
           text-align: center;
@@ -26,6 +28,7 @@ section#HOME_ACCES_CUESTIONARIO {
         }
 
         .paragraph {
+          max-width: 260px;
           margin-top: 0;
           margin-bottom: 20px;
           font: normal normal 300 16px/23px Lexend Deca;
@@ -50,20 +53,43 @@ section#HOME_ACCES_CUESTIONARIO {
 }
 
 @media screen and (min-width: 1000px) {
-  section#HOME_ACCES_CUESTIONARIO {
+  section#BlocHomeSectionInfo {
     padding-top: 240px;
     padding-bottom: 170px;
     background-color: #f5f5f5;
     .wrap {
       .box-flex {
-        grid-template-columns: repeat(3, 300px);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-around;
-        gap: 50px;
+        justify-items: center;
+        gap: 0px;
+
         .item {
+          width: 100%;
+          &:nth-child(1),
+          &:nth-child(2) {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              border-right: 2px solid #72b0cb;
+              height: 72px;
+              top: calc(40% - 36px);
+              opacity: 0.22;
+            }
+          }
           .icon {
             margin-bottom: 25px;
           }
           .title-items {
+            margin-bottom: 24px;
+          }
+
+          .paragraph {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
             margin-bottom: 24px;
           }
         }

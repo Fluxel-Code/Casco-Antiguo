@@ -8,6 +8,7 @@ function FUN_BLOCK_HOME_SectionServicios____content(){
             <div class="box">
                     <div class="card">
                         <div class="card-header">
+                            <figure class="m-0 img-card">
                             <?php
                                 $image = get_field('ACF_HOME_BLOCK_SERVICES_CARD_FIRST_IMG');
                                 $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -17,6 +18,7 @@ function FUN_BLOCK_HOME_SectionServicios____content(){
                                     echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
                                 }
                             ?>
+                            </figure>
                         </div>
                         <div class="card-body light-blue">
                             <span class="d-block title-card">
@@ -83,6 +85,7 @@ function FUN_BLOCK_HOME_SectionServicios____content(){
                     <!-- card => nº 1 -->
                     <div class="card">
                         <div class="card-header">
+                            <figure class="m-0 img-card">
                             <?php
                                 $image = get_field('ACF_HOME_BLOCK_SERVICES_CARD_SECONDS_IMG');
                                 $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -92,6 +95,7 @@ function FUN_BLOCK_HOME_SectionServicios____content(){
                                     echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
                                 }
                             ?>
+                            </figure>
                         </div>
                         <div class="card-body dark-blue">
                             <span class="d-block title-card">

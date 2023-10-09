@@ -5,6 +5,7 @@ function FUN_BLOCK_HOME_SectionInfo____content(){
     //Recuerdar poner esta funcion en "___base"
     ?>
         <div class="box-flex">
+            
             <div class="item">
                 <div class="icon">
                     <svg
@@ -113,7 +114,7 @@ function FUN_BLOCK_HOME_SectionInfo____content(){
                 <p class="paragraph text-center">
                     <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_FIRST_DESCRIP"); ?>
                 </p>
-                <a href="#" class="link-items">
+                <a href="<?php echo get_field("ACF_HOME_BLOCK_ACCEDE_url_1"); ?>" class="link-items">
                     <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_FIRST_BTN"); ?>
                     <span>
                         <svg
@@ -226,7 +227,7 @@ function FUN_BLOCK_HOME_SectionInfo____content(){
                 <p class="paragraph text-center">
                     <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_SECONDS_DESCRIP"); ?>
                 </p>
-                <a href="#" class="link-items">
+                <a href="<?php echo get_field("ACF_HOME_BLOCK_ACCEDE_url_2"); ?>" class="link-items">
                     <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_SECONDS_BTN"); ?>
                     <span>
                         <svg
@@ -331,8 +332,8 @@ function FUN_BLOCK_HOME_SectionInfo____content(){
                 <p class="paragraph text-center">
                     <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_THIRD_DESCRIP"); ?>
                 </p>
-                <a href="#" class="link-items">
-                    <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_THIRD_DESCRIP"); ?>
+                <a href="<?php echo get_field("ACF_HOME_BLOCK_ACCEDE_url_3"); ?>" class="link-items">
+                    <?php echo get_field("ACF_HOME_BLOCK_ACCEDE_ITEM_THIRD_BTN"); ?>
                     <span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
