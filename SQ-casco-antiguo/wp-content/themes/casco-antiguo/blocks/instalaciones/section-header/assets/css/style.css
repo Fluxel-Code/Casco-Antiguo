@@ -1,0 +1,98 @@
+section#BlocInstaSectionHead_instalaciones .contenedor {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .bg-img {
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .bg-img img {
+  width: 100;
+  height: 100%;
+  object-fit: cover;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .bg-img .img-desktop {
+  display: none;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info {
+  max-width: 1470px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 30px;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 38px;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .links li {
+  background-image: none;
+  padding: 0;
+  text-align: left;
+  font: normal normal bold 16px/23px Lexend Deca;
+  letter-spacing: 0px;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .links li a {
+  color: #edf4f7 !important;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .links li:first-child {
+  font: normal normal 300 16px/23px Lexend Deca;
+  position: relative;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .links li:first-child::before {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #72b0cb;
+  right: -19px;
+  top: 0;
+  bottom: 0;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .title-box {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+section#BlocInstaSectionHead_instalaciones .contenedor .container-info .title-box .title {
+  margin: 0;
+  text-align: center;
+  font: normal normal 800 45px/45px Lexend Deca;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  section#BlocInstaSectionHead_instalaciones .contenedor {
+    width: 100%;
+    height: 431px;
+    position: relative;
+  }
+  section#BlocInstaSectionHead_instalaciones .contenedor .bg-img .img-movil {
+    display: none;
+  }
+  section#BlocInstaSectionHead_instalaciones .contenedor .bg-img .img-desktop {
+    width: 100%;
+    aspect-ratio: 3.71;
+    display: block;
+  }
+  section#BlocInstaSectionHead_instalaciones .contenedor .container-info {
+    height: 100%;
+  }
+  section#BlocInstaSectionHead_instalaciones .contenedor .container-info .title-box {
+    place-items: none;
+    align-items: end;
+    justify-content: left;
+  }
+  section#BlocInstaSectionHead_instalaciones .contenedor .container-info .title-box .title {
+    margin-left: 192px;
+    text-align: left;
+    font: normal normal 800 82px/45px Lexend Deca;
+  }
+}
