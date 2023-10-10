@@ -60,6 +60,9 @@ section#BlocInstaSectionDescripcion .contenedor .flex-box .box-img > figure .lay
   height: 100%;
   border: 2px solid white;
 }
+section#BlocInstaSectionDescripcion .contenedor .flex-box .box-img .mt-neg-80 {
+  margin-top: -80px;
+}
 @media screen and (min-width: 992px) {
   section#BlocInstaSectionDescripcion .contenedor .flex-box {
     grid-template-columns: 1fr 1fr;
@@ -94,5 +97,8 @@ section#BlocInstaSectionDescripcion .contenedor .flex-box .box-img > figure .lay
     top: -67px;
     left: -8.8%;
     height: 278px;
+  }
+  section#BlocInstaSectionDescripcion .contenedor .flex-box .box-img .mt-neg-80 {
+    margin-top: 0;
   }
 }

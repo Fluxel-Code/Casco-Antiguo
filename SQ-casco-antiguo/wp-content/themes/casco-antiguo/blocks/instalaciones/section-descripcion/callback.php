@@ -30,7 +30,7 @@ function FUN_BLOCK_INST_SectionDescrip____content(){
                     </div>
                     <!-- layer -->
                 </figure>
-                <figure class="m-0">
+                <figure class="mt-neg-80">
                     <?php
                         $image = get_field('ACF_BLOCK_IMG_SECONDS_DESCRIPCION_INSTALL');
                         $size = 'full'; // (thumbnail, medium, large, full or custom size)
