@@ -64,6 +64,9 @@ section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-img > figure .layer .bor
   height: 100%;
   border: 2px solid white;
 }
+section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-img .mt-neg-80 {
+  margin-top: -80px;
+}
 @media screen and (min-width: 992px) {
   section#INSTALL_PLENO_MADRID .wrap-small .flex-box {
     grid-template-columns: 1fr 1fr;
@@ -98,5 +101,8 @@ section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-img > figure .layer .bor
     top: -67px;
     left: -18.8%;
     height: 278px;
+  }
+  section#INSTALL_PLENO_MADRID .wrap-small .flex-box .box-img .mt-neg-80 {
+    margin-top: 0;
   }
 }

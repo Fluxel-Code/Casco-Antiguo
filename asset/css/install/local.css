@@ -1,3 +1,6 @@
+section#BlocInstaSectionLocal {
+  padding-top: 68.5px;
+}
 section#BlocInstaSectionLocal .contenedor .square-locations {
   display: flex;
   flex-direction: column;
@@ -15,7 +18,6 @@ section#BlocInstaSectionLocal .contenedor .square-locations .video-location img 
   object-fit: cover;
 }
 section#BlocInstaSectionLocal .contenedor .square-locations .video-location .btn-play {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,6 +51,9 @@ section#BlocInstaSectionLocal .contenedor .square-locations .box-info .content .
   letter-spacing: 0px;
 }
 @media screen and (min-width: 906px) {
+  section#BlocInstaSectionLocal {
+    padding-top: 0;
+  }
   section#BlocInstaSectionLocal .contenedor .square-locations {
     flex-direction: row;
     align-items: center;

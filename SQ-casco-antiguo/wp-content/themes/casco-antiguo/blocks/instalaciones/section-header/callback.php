@@ -7,7 +7,7 @@ function FUN_BLOCK_INST_SectionHead_instalaciones____content(){
         <figure class="bg-img">
             <!-- movil -->
             <?php
-                $image = get_field('ACF_BLOCK_IMG_FIRST_DESCRIPCION_INSTALL');
+                $image = get_field('ACF_BLOCK_BACKGROUND_HEADER_MOVIL_INSTALL');
                 $size = 'full'; // (thumbnail, medium, large, full or custom size)
                 $sClase = "img-fluid img-movil";  // Aqui ponemos las clases de la foto usadas en la maqueta
 
@@ -17,7 +17,7 @@ function FUN_BLOCK_INST_SectionHead_instalaciones____content(){
             ?>
             <!-- desktop -->
             <?php
-                $image = get_field('ACF_BLOCK_IMG_FIRST_DESCRIPCION_INSTALL');
+                $image = get_field('ACF_BLOCK_BACKGROUND_HEADER_DESKTOP_INSTALL');
                 $size = 'full'; // (thumbnail, medium, large, full or custom size)
                 $sClase = "img-fluid img-desktop";  // Aqui ponemos las clases de la foto usadas en la maqueta
 
