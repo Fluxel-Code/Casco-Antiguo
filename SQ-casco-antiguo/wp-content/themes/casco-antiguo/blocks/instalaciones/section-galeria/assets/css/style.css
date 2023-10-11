@@ -1,0 +1,131 @@
+section#BlocInstaSectiongaleria .contenedor .box-grilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 37px;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big,
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items {
+  width: 100%;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big .element,
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items .element {
+  width: 100%;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big .element img,
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items .element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big .element {
+  aspect-ratio: 1.5;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(2) > .element {
+  aspect-ratio: 0.75;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(3) > .element {
+  aspect-ratio: 1.24;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(4) > .element {
+  aspect-ratio: 1.498;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(5) > .element {
+  aspect-ratio: 1.498;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(6) > .element {
+  aspect-ratio: 0.75;
+}
+section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(7) > .element {
+  aspect-ratio: 2.758;
+}
+@media screen and (min-width: 768px) {
+  section#BlocInstaSectiongaleria .contenedor .box-grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big {
+    grid-column: 1 / 3;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big .element {
+    aspect-ratio: 1.673;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(2) {
+    order: 2;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(2) > .element {
+    aspect-ratio: 0.746;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(3) {
+    order: 4;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(3) > .element {
+    aspect-ratio: 1;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(4) {
+    order: 3;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(4) > .element {
+    aspect-ratio: 0.746;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(5) {
+    order: 5;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(5) > .element {
+    aspect-ratio: 1;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(6) {
+    order: 6;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(6) > .element {
+    aspect-ratio: 0.746;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(7) {
+    order: 7;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(7) > .element {
+    aspect-ratio: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  section#BlocInstaSectiongaleria .contenedor .box-grilla {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px 40px;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big {
+    grid-column: 1 / 4;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(2) {
+    order: 2;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(3) {
+    order: 3;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(4) {
+    order: 4;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(5) {
+    order: 5;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(6) {
+    order: 6;
+    margin-top: -34%;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(7) {
+    order: 7;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#BlocInstaSectiongaleria .contenedor .box-grilla {
+    justify-content: center;
+    grid-template-columns: repeat(3, 318px);
+    gap: 52px 45px;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items-big {
+    width: calc(100% + 17px);
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(4) {
+    margin-left: 17px;
+  }
+  section#BlocInstaSectiongaleria .contenedor .box-grilla .items:nth-child(7) {
+    margin-left: 17px;
+  }
+}
