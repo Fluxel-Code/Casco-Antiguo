@@ -1,0 +1,139 @@
+section#BlocHorariosRelated {
+  padding-top: 27px; // esto no se sabe si va ya que aja
+  padding-bottom: 30.5px; // esto no se sabe si va ya que aja
+  .contenedor {
+    .title-courses {
+      margin-top: 0;
+      text-align: center;
+      font: normal normal bold 28px/38px Lexend Deca;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+    .box-grid {
+      margin: 0 auto;
+      max-width: 333px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-flow: dense;
+      grid-gap: 50px;
+
+      .item {
+        background-color: white;
+        width: 100%;
+        box-shadow: 0px 14px 44px #b6c9cc69;
+        border-radius: 14px;
+        overflow: hidden;
+
+        .head-img {
+          aspect-ratio: 1.6;
+          margin-bottom: 0;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .body {
+          padding: 27px 80px 28px 32px;
+          min-height: 156px;
+          max-height: 156px;
+          position: relative;
+          .box-btn {
+            margin-top: -47px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+
+            .card-btn {
+              padding-top: 7px;
+              padding-bottom: 7px;
+              padding-left: 20px;
+              padding-right: 21px;
+              background-color: #72b0cb;
+              border-radius: 20px;
+              text-transform: uppercase;
+              text-align: left;
+              font: normal normal 800 12px/16px Lexend Deca;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+
+            .btn {
+              &::before {
+                content: none;
+              }
+            }
+
+            .icon-letter {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background-color: #0f218b;
+              padding: 7px 11px;
+            }
+
+            button {
+              &::before {
+                content: none;
+                display: none;
+              }
+            }
+          }
+          & > h3 {
+            margin-bottom: 0;
+            margin-top: 13px;
+            font: normal normal bold 22px/24px Lexend Deca;
+            letter-spacing: 0px;
+            color: #000000;
+          }
+
+          .link {
+            position: absolute;
+            bottom: 28px;
+            font: normal normal 800 16px/20px Lexend Deca;
+            letter-spacing: 0px;
+            color: #72b0cb;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 740px) {
+  section#BlocHorariosRelated {
+    .contenedor {
+      .title-courses {
+        text-align: left;
+        margin-bottom: 51px;
+        font: normal normal bold 35px/38px Lexend Deca;
+      }
+
+      .box-grid {
+        max-width: unset;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-gap: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  section#BlocHorariosRelated {
+    .contenedor {
+      .title-courses {
+        font: normal normal bold 38px/40px Lexend Deca;
+      }
+
+      .box-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 21px;
+      }
+    }
+  }
+}
