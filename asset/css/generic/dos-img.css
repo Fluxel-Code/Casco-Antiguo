@@ -1,3 +1,7 @@
+section#BlocSuperGDosFotos {
+  padding-top: 63px;
+  padding-bottom: 68.5px;
+}
 section#BlocSuperGDosFotos .contenedor .flex-box {
   display: grid;
   grid-template-columns: 1fr;
