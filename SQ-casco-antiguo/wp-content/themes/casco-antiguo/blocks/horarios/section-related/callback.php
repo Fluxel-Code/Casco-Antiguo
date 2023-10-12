@@ -4,24 +4,40 @@
 function FUN_BLOCK_Horarios_related____content(){
     ?>
     
-        <h2 class="title-courses">Cursos que pueden interesarte</h2>
+        <h2 class="title-courses">
+            <?php echo get_field("ACF_BLOCK_COURSES_TITLE_HORARIO"); ?>
+        </h2>
         <div class="box-grid">
             <div class="item">
                 <figure class="head-img">
-                    <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/10/DiveTheory-Gallery-H-TaD8tTaK.png" alt="" class="img-fluid img-first">
+                    <?php
+                        $image = get_field('ACF_BLOCK_COURSES_CARD_IMG_FIRST_HORARIO');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        $sClase = "img-fluid img-first";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                        }
+                    ?>
                 </figure>
                 <!-- .figure -->
                 <div class="body">
                     <div class="box-btn">
-                        <button class="btn card-btn">INICIACIÓN</button>
+                        <button class="btn card-btn">
+                            <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_FIRST_HORARIO"); ?>
+                        </button>
                         <button class="icon-letter SQ_btn">
-                            <span>E</span>
+                            <span>
+                                <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_ESTANDAR_E"); ?>
+                            </span>
                         </button>
                     </div>
                     <!-- .box-btn -->
-                    <h3>Teoría del buceo</h3>
+                    <h3>
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_TITLE_FIRST_HORARIO"); ?>
+                    </h3>
                     <a href="#" class="link">
-                        Saber más
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_LINK_FIRST_HORARIO"); ?>
                         <span class="m-left-10">
                             <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -45,22 +61,36 @@ function FUN_BLOCK_Horarios_related____content(){
                 </div>
                 <!-- .body -->
             </div>
-             <!-- .item -->
+            <!-- .item -->
             <div class="item">
                 <figure class="head-img">
-                    <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/09/nitrox.jpg" alt="" class="img-fluid img-seconds">
+                    <?php
+                        $image = get_field('ACF_BLOCK_COURSES_CARD_IMG_SECONDS_HORARIO');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        $sClase = "img-fluid img-seconds";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                        }
+                    ?>
                 </figure>
                 <div class="body">
                     <div class="box-btn">
-                        <button class="btn card-btn">AVANZADO</button>
+                        <button class="btn card-btn">
+                            <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_SECONDS_HORARIO"); ?>
+                        </button>
                         <button class="icon-letter SQ_btn">
-                            <span>E</span>
+                            <span>
+                                <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_ESTANDAR_E"); ?>
+                            </span>
                         </button>
                     </div>
                     <!-- .box-btn -->
-                    <h3>Nitrox</h3>
+                    <h3>
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_TITLE_SECONDS_HORARIO"); ?>
+                    </h3>
                     <a href="#" class="link">
-                        Saber más
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_LINK_SECONDS_HORARIO"); ?>
                         <span class="m-left-10">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -87,19 +117,33 @@ function FUN_BLOCK_Horarios_related____content(){
             <!-- .item -->
             <div class="item">
                 <figure class="head-img">
-                    <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/09/Rescue-Gallery-hero-lFaWM8k9.jpeg" alt="" class="img-fluid img-last">
+                    <?php
+                        $image = get_field('ACF_BLOCK_COURSES_CARD_IMG_THIRD_HORARIO');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        $sClase = "img-fluid img-last";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                        }
+                    ?>
                 </figure>
                 <div class="body">
                     <div class="box-btn">
-                        <button class="btn card-btn">ESPECIALIZACIÓN</button>
+                        <button class="btn card-btn">
+                            <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_THIRD_HORARIO"); ?>
+                        </button>
                         <button class="icon-letter SQ_btn">
-                            <span>E</span>
+                            <span>
+                                <?php echo get_field("ACF_BLOCK_COURSES_CARD_BTN_ESTANDAR_E"); ?>
+                            </span>
                         </button>
                     </div>
                     <!-- .box-btn -->
-                    <h3>Rescue Diver</h3>
+                    <h3>
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_TITLE_THIRD_HORARIO"); ?>
+                    </h3>
                     <a href="#" class="link">
-                        Saber más
+                        <?php echo get_field("ACF_BLOCK_COURSES_CARD_LINK_THIRD_HORARIO_"); ?>
                         <span class="m-left-10">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
