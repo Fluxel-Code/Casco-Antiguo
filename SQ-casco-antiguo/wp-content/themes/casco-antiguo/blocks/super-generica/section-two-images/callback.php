@@ -6,23 +6,43 @@ function FUN_BLOCK_SuperG_DosFotos____content(){
     
         <div class="flex-box">
             <div class="box-info">
-                <h3 class="m-0 title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies</h3>
+                <h3 class="m-0 title">
+                    <?php echo get_field("ACF_BLOCK_TITLE_TWO_PHOTO_GENERICA"); ?>
+                </h3>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies, odio ac efficitur cursus, ligula neque aliquet massa, non volutpat enim sapien in augue. Maecenas sed facilisis nibh, ac condimentum ipsum. Mauris aliquet, justo et congue tempor, ante orci.
+                    <?php echo get_field("ACF_BLOCK_PARAGRAPH_TWO_PHOTO_GENERICA"); ?>
                 </p>
-                <a href="#" class="SQ_btn d-block btn">Call to action button</a>
+                <a href="#" class="SQ_btn d-block btn">
+                    <?php echo get_field("ACF_BLOCK_TEXT_BTN_TWO_PHOTO_GENERICA"); ?>
+                </a>
             </div>
             <!-- .box-info -->
             <div class="box-img">
                 <figure class="m-0">
-                    <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/10/chica.png" alt="" class="img-fluid">
+                    <?php
+                        $image = get_field('ACF_BLOCK_IMG_TOP_TWO_PHOTO_GENERICA');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        $sClase = "img-fluid";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                        }
+                    ?>
                     <div class="layer">
                         <div class="border"></div>
                     </div>
                     <!-- layer -->
                 </figure>
                 <figure class="">
-                    <img src="https://cascoantiguo.temporalweb.es/wp-content/uploads/2023/10/Imagen-22.png" alt="" class="img-fluid">
+                    <?php
+                        $image = get_field('ACF_BLOCK_IMG_BOTTON_TWO_PHOTO_GENERICA');
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        $sClase = "img-fluid";  // Aqui ponemos las clases de la foto usadas en la maqueta
+
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image['id'], $size, false, array("class" => $sClase) );
+                        }
+                    ?>
                     <div class="layer">
                         <div class="border"></div>
                     </div>
